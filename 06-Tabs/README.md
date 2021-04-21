@@ -1,3 +1,4 @@
-#### IN ACTION
+#### React project Tabs
 
-[Portfolio](https://gatsby-strapi-portfolio-project.netlify.app/)
+- tabs which display detailed information
+- fetch from external Api with built in fetch function

@@ -15,7 +15,7 @@
 2. Tours
 
 - fetch list of tours, loading option
-- for every tour there is a image, name, prace, read more/show less button
+- for every tour there is a image, name, price, read more/show less button
 - remove functionality
 
 3. Reviews
@@ -31,8 +31,20 @@
 - react-icons: npm install react-icons --save
 
 5. Menu
+
+- list of menu items
+- dynamically added buttons (the more types you have in the list, the more buttons you'll have). Buttons allow us to filter the list (all, breakfast, lunch, shakes)
+
 6. Tabs
+
+- tabs which display detailed information
+- fetch from external Api with built in fetch function
+
 7. Slider
+
+- prev/next button
+- auto slide option with setInterval
+- in action: https://gatsby-airtable-design-project.netlify.app/
 
 #### Forms
 

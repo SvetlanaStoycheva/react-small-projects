@@ -1,5 +1,5 @@
-# react-projects-7-slider
+#### React project Slider
 
-#### IN ACTION
-
-[Gatsby-Airtable Project](https://gatsby-airtable-design-project.netlify.app/)
+- prev/next button
+- auto slide option with setInterval
+- in action: https://gatsby-airtable-design-project.netlify.app/
