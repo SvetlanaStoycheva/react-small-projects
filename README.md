@@ -49,12 +49,31 @@
 #### Forms
 
 8. Lorem Ipsum Generator
+
+- 'dummy text' generator
+- user can determine the number of paragraphs and click button 'generate'. Max paragraph number is 8.
+- inspiration: Hipster ipsum https://hipsum.co
+
 9. Color Shades Generator
+
+- user passes in a color, the app returns different tints and shades of the particular color
+- by pushing on a certain tint/shade, we copy its value to the clipboard
+- error functionality; if the input color doesn't exist
+- using data from external library [values.js](https://github.com/noeldelgado/values.js)
+
 10. Grocery Bud
+
+- it is a form, we can add, delete or edit items in the list
+- alert functionality, toggling between success and danger, showing alert for 3 sec (setTimeout)
+- use of one of the browser Api: the local storage
 
 #### useRef
 
 11. Navbar
+
+- building a navbar, toggling the links position on big and small window, smooth toggling via className/css
+- navbar height changes dynamically according to the number of links inside
+- using useRef hook
 
 #### useContext
 
