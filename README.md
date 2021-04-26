@@ -78,11 +78,24 @@
 #### useContext
 
 12. Modal And Sidebar
-13. Stripe Submenus
+
+- toggle functionality between modal and sidebar
+- add context to the whole app; useContext and context Api
+- as an alternative: in order to reduce the imports, we can create a custom hook, that provides access to the AppContext
+
+13. Menus and Submenus
+
+- inspiration: https://stripe.com
+- navbar and sidebar (menus/submenus) for large and small screen
+- submenus position and width change dynamically
 
 #### useReducer and useContext
 
 14. Cart
+
+- fetching data from external Api, using useReducer
+- ability to increase/decrease the amount of the items in the cart
+- remove item functionality, clear cart
 
 #### React Router and useCallback
 
