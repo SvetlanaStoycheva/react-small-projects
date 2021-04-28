@@ -100,3 +100,41 @@
 #### React Router and useCallback
 
 15. Cocktails
+
+- external Api: https://www.thecocktaildb.com
+- React Router Dom; multiple pages (home, about, single product page)
+- search form with uncontrolled input(useRef). When the user begins to type, we refetch the data.
+- React Router Fix form Netlify deployment
+
+(Fix)[https://dev.to/dance2die/page-not-found-on-netlify-with-react-router-58mc]
+"build": "CI= react-scripts build",
+
+16. Markdown-preview
+
+- on the left side user can write the markdown and the result appears on the right side. The result is html that we can style with css the way we want.
+- using the react marktdown library: https://www.npmjs.com/package/react-markdown
+- text aria with controlled input
+
+17. Random-person
+
+- external Api: https://randomuser.me. API for generating random user data. Like Lorem Ipsum, but for people.
+- display a random user and specific info about the user (name, address, e-mail etc.)
+
+18. Pagination
+
+- fetching 100 github followers and displaying the result on 10 pages. This is an example for pagination on the front-end. Array of arrays.
+- next/prev buttons, show the active page button
+- custom hook: useFetch
+
+19. Stock photos
+
+- gitting images from unsplash Api: https://unsplash.com/documentation;
+- working with an access key  
+  Cra env vars: https://create-react-app.dev/docs/adding-custom-environment-variables/
+  1. create .env file in the root (side by side with package.json)
+  2. in the .env file: REACT_APP_ACCESS_KEY=
+  3. use it in useFetch or wherever is needed like this:  
+     {process.env.REACT_APP_ACCESS_KEY}
+  4. add .env file to gitignore
+  5. restart the dev server (ctr C and npm start)
+- infinite scroll, input search form, link to the photo creater
