@@ -109,6 +109,8 @@
 (Fix)[https://dev.to/dance2die/page-not-found-on-netlify-with-react-router-58mc]
 "build": "CI= react-scripts build",
 
+### Advanced Projects (API and External Libraries)
+
 16. Markdown-preview
 
 - on the left side user can write the markdown and the result appears on the right side. The result is html that we can style with css the way we want.
@@ -138,3 +140,10 @@
   4. add .env file to gitignore
   5. restart the dev server (ctr C and npm start)
 - infinite scroll, input search form, link to the photo creater
+
+20. Dark mode (and working with date)
+
+- landing page for a blog that has a toggle button for the page layout. It switches between dark and white mode.
+- working with moment js (https://momentjs.com), library for date formatting
+- saving dark/white mode setting for particular user, working with locale storage
+- inspiration: https://overreacted.io

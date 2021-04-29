@@ -1,11 +1,21 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './Home'
-import Movie from './SingleMovie'
+import SingleMovie from './SingleMovie'
 
 function App() {
-  return <h2>movie DB starter</h2>
+  return (
+    <Router>
+      <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route exact path='/movies/:id'>
+          <SingleMovie />
+        </Route>
+      </Switch>
+    </Router>
+  )
 }
 
 export default App
