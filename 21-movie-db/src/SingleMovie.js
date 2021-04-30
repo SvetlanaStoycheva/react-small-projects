@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { API_ENDPOINT } from './context'
+import { API_ENDPOINT } from './useFetch'
 
 const noPicAvailable = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiUg-3W6kCfr49tQgDEDkUc_KLJFHieT8ZMIKwp1AgIdodPotF-K4djuErSvYa84Cfcmw&usqp=CAU`
 
@@ -28,7 +28,6 @@ const SingleMovie = () => {
   useEffect(() => {
     fetchMovie()
   }, [id])
-  console.log(movie)
 
   if (isLoading) {
     return <div className='loading'></div>

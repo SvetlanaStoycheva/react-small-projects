@@ -147,3 +147,18 @@
 - working with moment js (https://momentjs.com), library for date formatting
 - saving dark/white mode setting for particular user, working with locale storage
 - inspiration: https://overreacted.io
+
+21. MoviesDB
+
+- search form for movies using external Api: http://www.omdbapi.com
+- in case of no match, an error is displayed (error message from the Api)
+- single movie page with details about it
+- Context Api, React Router Dom, access key: env veriable
+
+22. Hacker news
+
+- it is a news blog with a search form
+- fetch articles from external Api (https://hn.algolia.com/api) that reference the input
+- remove and show more buttons
+- server side pagination. Prev/next button, when we click them, we fetch a new page from the server.
+- useReducer and Context Api

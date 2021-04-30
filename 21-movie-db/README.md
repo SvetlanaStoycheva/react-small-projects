@@ -1,6 +1,6 @@
 21. MoviesDB
 
-- search form where we can search for movies and Api will display them; http://www.omdbapi.com
-- if there is no match, we display an error
+- search form for movies using external Api: http://www.omdbapi.com
+- in case of no match, an error is displayed (error message from the Api)
 - single movie page with details about it
-- Context Api, React Router Dom, access key: env verable
+- Context Api, React Router Dom, access key: env veriable
