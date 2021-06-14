@@ -38,22 +38,34 @@
 - during toggling we change the icon inside of the button
 - idea: https://uidesigndaily.com/posts/sketch-accordion-website-day-1175
 - react-icons: npm install react-icons --save
+<p align-items: center>
+  <img src='ReadMe-IMAGES/4.png' width='200'>
+</p>
 
 5. Menu
 
 - list of menu items
 - dynamically added buttons (the more types you have in the list, the more buttons you'll have). Buttons allow us to filter the list (all, breakfast, lunch, shakes)
+<p align-items: center>
+  <img src='ReadMe-IMAGES/5.png' width='200'>
+</p>
 
 6. Tabs
 
 - tabs which display detailed information
 - fetch from external Api with built in fetch function
+<p align-items: center>
+  <img src='ReadMe-IMAGES/6.png' width='200'>
+</p>
 
 7. Slider
 
 - prev/next button
 - auto slide option with setInterval
 - in action: https://gatsby-airtable-design-project.netlify.app/
+<p align-items: center>
+  <img src='ReadMe-IMAGES/7.png' width='200'>
+</p>
 
 #### Forms
 
@@ -62,6 +74,9 @@
 - 'dummy text' generator
 - user can determine the number of paragraphs and click button 'generate'. Max paragraph number is 8.
 - inspiration: Hipster ipsum https://hipsum.co
+<p align-items: center>
+  <img src='ReadMe-IMAGES/8.png' width='200'>
+</p>
 
 9. Color Shades Generator
 
@@ -69,12 +84,18 @@
 - by pushing on a certain tint/shade, we copy its value to the clipboard
 - error functionality; if the input color doesn't exist
 - using data from external library [values.js](https://github.com/noeldelgado/values.js)
+<p align-items: center>
+  <img src='ReadMe-IMAGES/9.png' width='200'>
+</p>
 
 10. Grocery Bud
 
 - it is a form, we can add, delete or edit items in the list
 - alert functionality, toggling between success and danger, showing alert for 3 sec (setTimeout)
 - use of one of the browser Api: the local storage
+<p align-items: center>
+  <img src='ReadMe-IMAGES/10.png' width='200'>
+</p>
 
 #### useRef
 
@@ -83,6 +104,9 @@
 - building a navbar, toggling the links position on big and small window, smooth toggling via className/css
 - navbar height changes dynamically according to the number of links inside
 - using useRef hook
+<p align-items: center>
+  <img src='ReadMe-IMAGES/11.png' width='200'>
+</p>
 
 #### useContext
 
@@ -91,12 +115,18 @@
 - toggle functionality between modal and sidebar
 - add context to the whole app; useContext and context Api
 - as an alternative: in order to reduce the imports, we can create a custom hook, that provides access to the AppContext
+<p align-items: center>
+  <img src='ReadMe-IMAGES/12.png' width='200'>
+</p>
 
 13. Menus and Submenus
 
 - inspiration: https://stripe.com
 - navbar and sidebar (menus/submenus) for large and small screen
 - submenus position and width change dynamically
+<p align-items: center>
+  <img src='ReadMe-IMAGES/13.png' width='200'>
+</p>
 
 #### useReducer and useContext
 
@@ -105,6 +135,9 @@
 - fetching data from external Api, using useReducer
 - ability to increase/decrease the amount of the items in the cart
 - remove item functionality, clear cart
+<p align-items: center>
+  <img src='ReadMe-IMAGES/14.png' width='200'>
+</p>
 
 #### React Router and useCallback
 
@@ -114,6 +147,9 @@
 - React Router Dom; multiple pages (home, about, single product page)
 - search form with uncontrolled input(useRef). When the user begins to type, we refetch the data.
 - React Router Fix form Netlify deployment
+<p align-items: center>
+  <img src='ReadMe-IMAGES/15.png' width='200'>
+</p>
 
 (Fix)[https://dev.to/dance2die/page-not-found-on-netlify-with-react-router-58mc]
 "build": "CI= react-scripts build",
@@ -125,17 +161,26 @@
 - on the left side user can write the markdown and the result appears on the right side. The result is html that we can style with css the way we want.
 - using the react marktdown library: https://www.npmjs.com/package/react-markdown
 - text aria with controlled input
+<p align-items: center>
+  <img src='ReadMe-IMAGES/16.png' width='200'>
+</p>
 
 17. Random-person
 
 - external Api: https://randomuser.me. API for generating random user data. Like Lorem Ipsum, but for people.
 - display a random user and specific info about the user (name, address, e-mail etc.)
+<p align-items: center>
+  <img src='ReadMe-IMAGES/17.png' width='200'>
+</p>
 
 18. Pagination
 
 - fetching 100 github followers and displaying the result on 10 pages. This is an example for pagination on the front-end. Array of arrays.
 - next/prev buttons, show the active page button
 - custom hook: useFetch
+<p align-items: center>
+  <img src='ReadMe-IMAGES/18.png' width='200'>
+</p>
 
 19. Stock photos
 
@@ -149,6 +194,9 @@
   4. add .env file to gitignore
   5. restart the dev server (ctr C and npm start)
 - infinite scroll, input search form, link to the photo creater
+<p align-items: center>
+  <img src='ReadMe-IMAGES/19.png' width='200'>
+</p>
 
 20. Dark mode (and working with date)
 
@@ -156,6 +204,9 @@
 - working with moment js (https://momentjs.com), library for date formatting
 - saving dark/white mode setting for particular user, working with locale storage
 - inspiration: https://overreacted.io
+<p align-items: center>
+  <img src='ReadMe-IMAGES/20.png' width='200'>
+</p>
 
 21. MoviesDB
 
@@ -163,6 +214,9 @@
 - in case of no match, an error is displayed (error message from the Api)
 - single movie page with details about it
 - Context Api, React Router Dom, access key: env veriable
+<p align-items: center>
+  <img src='ReadMe-IMAGES/21.png' width='200'>
+</p>
 
 22. Hacker news
 
@@ -171,6 +225,9 @@
 - remove and show more buttons
 - server side pagination. Prev/next button, when we click them, we fetch a new page from the server.
 - useReducer and Context Api
+<p align-items: center>
+  <img src='ReadMe-IMAGES/22.png' width='200'>
+</p>
 
 23. Setup Quiz
 
@@ -179,3 +236,6 @@
 - library: axios, npm install axios; Axios is designed to handle http requests and responses.
   It's used more often than Fetch because it has a larger set of features and it supports older browsers.
 - control input setup form
+<p align-items: center>
+  <img src='ReadMe-IMAGES/23.png' width='200'>
+</p>
