@@ -9,8 +9,9 @@
 - it is a list of birthdays, each person has an image, name and age
 - clear all button
 - idea: https://www.uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042
-  ![title](Images/1.png)
+<p align-items: center>
   <img src='ReadMe-IMAGES/1.png' width='200'>
+</p>
 
 #### useEffect and Conditional Rendering
 
@@ -19,7 +20,6 @@
 - fetch list of tours, loading option
 - for every tour there is a image, name, price, read more/show less button
 - remove functionality
-  ![title](Images/2.png)
   <img src='ReadMe-IMAGES/2.png' width='200'>
 
 3. Reviews
