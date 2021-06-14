@@ -19,6 +19,7 @@
 - fetch list of tours, loading option
 - for every tour there is a image, name, price, read more/show less button
 - remove functionality
+  ![title](Images/2.png)
   <img src='ReadMe-IMAGES/2.png' width='200'>
 
 3. Reviews
