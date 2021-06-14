@@ -20,13 +20,17 @@
 - fetch list of tours, loading option
 - for every tour there is a image, name, price, read more/show less button
 - remove functionality
+<p align-items: center>
   <img src='ReadMe-IMAGES/2.png' width='200'>
+</p>
 
 3. Reviews
 
 - functionality that allows us to show different reviews; forwards, backwards and random
 - using react icons library; npm install react-icons --save
+<p align-items: center>
   <img src='ReadMe-IMAGES/3.png' width='200'>
+</p>
 
 4. Accordion
 
