@@ -1,35 +1,33 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { API_ENDPOINT } from './useFetch'
-
-const noPicAvailable = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiUg-3W6kCfr49tQgDEDkUc_KLJFHieT8ZMIKwp1AgIdodPotF-K4djuErSvYa84Cfcmw&usqp=CAU`
+import { API_ENDPOINT } from './context'
 
 const SingleMovie = () => {
   const { id } = useParams()
+
   const [movie, setMovie] = useState({})
-  const [isLoading, setIsLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [error, setError] = useState({ show: false, msg: '' })
 
   const fetchMovie = async () => {
-    const url = `${API_ENDPOINT}&i=${id}`
-
-    const response = await fetch(url)
+    setLoading(true)
+    const response = await fetch(`${API_ENDPOINT}&i=${id}`)
     const data = await response.json()
-
-    if (data.Response === 'True') {
-      setMovie(data)
-      setIsLoading(false)
+    console.log(data)
+    if (data.Response === 'False') {
+      setError({ show: true, msg: data.error })
+      setLoading(false)
     } else {
-      setError({ show: true, msg: data.Error })
-      setIsLoading(false)
+      setMovie(data)
+      setLoading(false)
     }
   }
 
   useEffect(() => {
     fetchMovie()
-  }, [id])
+  }, [])
 
-  if (isLoading) {
+  if (loading) {
     return <div className='loading'></div>
   }
   if (error.show) {
@@ -42,12 +40,12 @@ const SingleMovie = () => {
       </div>
     )
   }
+  const { Poster: poster, Title: title, Plot: plot, Year: year } = movie
 
-  const { Title: title, Year: year, Poster: poster, Plot: plot } = movie
   return (
-    <div className='single-movie'>
-      <img src={poster === 'N/A' ? noPicAvailable : poster} alt={title} />
-      <div className='single-movie-info'>
+    <section className='single-movie'>
+      <img src={poster} alt={title} />
+      <div className='single-movie-title'>
         <h2>{title}</h2>
         <p>{plot}</p>
         <h4>{year}</h4>
@@ -55,7 +53,7 @@ const SingleMovie = () => {
           back to movies
         </Link>
       </div>
-    </div>
+    </section>
   )
 }
 
